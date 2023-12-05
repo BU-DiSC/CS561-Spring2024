@@ -45,8 +45,9 @@
             var dates2021Spring = ["January 26", "January 28", "February 2", "February 4", "February 9", "February 11", "February 18", "February 23", "February 25", "March 2", "March 4", "March 9", "March 11", "March 16", "March 23", "March 25", "March 30", "April 1", "April 6", "April 8", "April 13", "April 15", "April 20", "April 22", "April 27", "April 29"];
             var dates2022Spring = ["January 20", "January 25", "January 27", "February 1", "February 3", "February 8", "February 10", "February 15", "February 17", "February 24", "March 1", "March 3", "March 15", "March 17", "March 22", "March 24", "March 29", "March 31", "April 5", "April 7", "April 12", "April 14", "April 19", "April 21", "April 26", "April 28", "May 3"];
             var dates2023Spring = ["January 19", "January 24", "January 26", "January 31", "February 2", "February 7", "February 9", "February 14", "February 16", "February 23", "February 28", "March 2", "March 14", "March 16", "March 21", "March 23", "March 28", "March 30", "April 4", "April 6", "April 11", "April 13", "April 18", "April 20", "April 25", "April 27", "May 2"];
+            var dates2024Spring = ["January 18", "January 23", "January 25", "January 30", "February 1", "February 6", "February 8", "February 13", "February 15", "February 20", "February 22", "February 27", "February 29", "March 5", "March 7", "March 19", "March 21", "March 26", "March 28", "April 2", "April 4", "April 9", "April 11", "April 16", "April 18", "April 23", "April 30"];
             // this should always be the current semester
-            var dates = dates2023Spring;
+            var dates = dates2024Spring;
             if (d >= 0 && d < 27)
                 return dates[d];
             else
@@ -206,7 +207,7 @@
                 <!-- <p>Class: Tu/Th 5:00-6:15pm <a href="http://www.bu.edu/classrooms/classroom/mcs-b37/" target="_blank">(MCS B37)</a> -->
                 <p>Class: Tu/Th 5:00-6:15pm (TBA)</a>
                     <br> Instructor: <a href="https://cs-people.bu.edu/papon/" target="_blank">Tarikul Islam Papon</a>&nbsp;<a href="mailto:papon@bu.edu?subject=[CS561]"><i class="fa fa-envelope"></i></a>
-                    <br> Instructor: <a href="https://littlepig2013.github.io/" target="_blank">Zichen Zhu</a>&nbsp;<a href="mailto:zczhu@bu.edu?subject=[CS561]"><i class="fa fa-envelope"></i></a>
+                    <br> <a href="https://littlepig2013.github.io/" target="_blank">Zichen Zhu</a>&nbsp;<a href="mailto:zczhu@bu.edu?subject=[CS561]"><i class="fa fa-envelope"></i></a>
                 </p>
                 <p>Lab: Fri 5:00-5:50pm (TBA)
                 </p>
@@ -218,10 +219,9 @@
                 <!-- <p> OH: Tue/Thu 2-3pm<br> Office: CCDS 939 (@665 Comm. Ave.) -->
                 <p> OH: TBA<br> Office: CCDS 925 (@665 Comm. Ave.) <br> Office: CCDS 925 (@665 Comm. Ave.)
                     <p>
-                        Discussion on <a href="https://piazza.com/bu/spring2023/cs561" target="_blank">Piazza</a>
-                        <br>TF OH: Mon/Wed 4-5pm (CCDS 925D)
+                        Discussion on Piazza
                         <!-- <a href="https://piazza.com/class/kxhzecvxmmd1u7?cid=12" target="_blank">Posted on Piazza</a> -->
-                        <br>Grades on <a href="https://www.gradescope.com/courses/470999" target="_blank">Gradescope</a>
+                        <br>Grades on Gradescope
                     </p>
             </div>
         </div>
@@ -366,9 +366,9 @@
                     <p class="post-content"> In this class we will discuss the basics of data systems and the goals and structure of the course.
 
                         <h4>Readings</h4>
-                        <ul>
+                        <!-- <ul>
                             <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./slides/CAS-CS561-Class1.pdf">Slides</a> </li>
-                        </ul>
+                        </ul> -->
                     </p>
 
                     <h3 class="post-subtitle">
@@ -389,7 +389,7 @@
                     <p class="post-content"> In this class we discuss the fundamental components that comprise a database system. We will see the commonalities and the differences of the main database system architectures and we will discuss why we have several different ones.
                         <h4>Readings</h4>
                         <ul class="mylist">
-                            <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./slides/CAS-CS561-Class2.pdf">Slides</a> </li>
+                            <!-- <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./slides/CAS-CS561-Class2.pdf">Slides</a> </li> -->
                             <li><a href="https://dsf.berkeley.edu/papers/fntdb07-architecture.pdf">Architecture of a Database System</a>, Foundations and Trends in Databases, 2007</li>
                             <li><a href="https://stratos.seas.harvard.edu/files/stratos/files/columnstoresfntdbs.pdf">The Design and Implementation of Modern Column-Oriented Database Systems</a>, Foundations and Trends in Databases, 2012</li>
                             <li><a href="https://www.cut.ac.cy/digitalAssets/122/122275_1002013-FnTDB-Survey.pdf">Massively Parallel Databases and MapReduce Systems</a>, Foundations and Trends in Databases, 2013</li>
@@ -453,7 +453,8 @@
                         </ul>
                     </p>
 
-
+                    
+                    <div style="display:none">
                     <h2 class="text-center">A: Storage Layouts</h2>
                     <h3 class="post-subtitle">
                         <script type="text/javascript">
@@ -1260,6 +1261,7 @@ Filter Towards Efficient Read for LSM-tree based KV Stores</a>, HotStorage 2018<
                     <br>
                     <br>
                     <br>
+                    </div>
 
                 </div>
             </div>
@@ -1303,7 +1305,7 @@ Filter Towards Efficient Read for LSM-tree based KV Stores</a>, HotStorage 2018<
                             </a>
                         </li>
                     </ul> -->
-                    <p class="copyright text-muted">Copyright &copy; Subhadeep Sarkar 2023</p>
+                    <p class="copyright text-muted">Copyright &copy; Papon, Zichen 2023</p>
                 </div>
             </div>
         </div>
