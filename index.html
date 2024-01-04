@@ -45,7 +45,7 @@
             var dates2021Spring = ["January 26", "January 28", "February 2", "February 4", "February 9", "February 11", "February 18", "February 23", "February 25", "March 2", "March 4", "March 9", "March 11", "March 16", "March 23", "March 25", "March 30", "April 1", "April 6", "April 8", "April 13", "April 15", "April 20", "April 22", "April 27", "April 29"];
             var dates2022Spring = ["January 20", "January 25", "January 27", "February 1", "February 3", "February 8", "February 10", "February 15", "February 17", "February 24", "March 1", "March 3", "March 15", "March 17", "March 22", "March 24", "March 29", "March 31", "April 5", "April 7", "April 12", "April 14", "April 19", "April 21", "April 26", "April 28", "May 3"];
             var dates2023Spring = ["January 19", "January 24", "January 26", "January 31", "February 2", "February 7", "February 9", "February 14", "February 16", "February 23", "February 28", "March 2", "March 14", "March 16", "March 21", "March 23", "March 28", "March 30", "April 4", "April 6", "April 11", "April 13", "April 18", "April 20", "April 25", "April 27", "May 2"];
-            var dates2024Spring = ["January 18", "January 23", "January 25", "January 30", "February 1", "February 6", "February 8", "February 13", "February 15", "February 20", "February 22", "February 27", "February 29", "March 5", "March 7", "March 19", "March 21", "March 26", "March 28", "April 2", "April 4", "April 9", "April 11", "April 16", "April 18", "April 23", "April 30"];
+            var dates2024Spring = ["January 22", "January 24", "January 29", "January 31", "February 5", "February 7", "February 12", "February 14", "February 21", "February 26", "February 28", "March 4", "March 6", "March 5", "March 7", "March 18", "March 20", "March 25", "March 27", "April 1", "April 3", "April 8", "April 10", "April 17", "April 22", "April 24", "April 29"];
             // this should always be the current semester
             var dates = dates2024Spring;
             if (d >= 0 && d < 27)
@@ -455,7 +455,7 @@
                     </p>
 
                     
-                    <div style="display:none">
+                    
                     <h2 class="text-center">A: Storage Layouts</h2>
                     <h3 class="post-subtitle">
                         <script type="text/javascript">
@@ -476,7 +476,7 @@
 
                         <h4>Readings</h4>
                         <ul class="mylist">
-                            <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./slides/CAS-CS561-Class5.pdf">Slides</a> </li>
+                            <!-- <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./slides/CAS-CS561-Class5.pdf">Slides</a> </li> -->
                             <li><strong>(P)</strong> <a href="http://vldb.org/pvldb/vol14/p2216-sarkar.pdf">Constructing and Analyzing the LSM Compaction Design Space</a>, VLDB 2021 </li>
                             <li> (B) <a href="https://dl.acm.org/doi/10.1145/3514221.3520169"> Compactionary: A Dictionary for LSM Compactions</a>, SIGMOD 2022 [<a href="https://disc-projects.bu.edu/compactionary/#interactiveDemo">DEMO</a>]</li>
                         </ul>
@@ -501,7 +501,7 @@
 
                         <h4>Readings</h4>
                         <ul class="mylist">
-                            <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./slides/CAS-CS561-Class6.pdf">Slides</a> </li>
+                            <!-- <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./slides/CAS-CS561-Class6.pdf">Slides</a> </li> -->
                             <li><strong>(P)</strong> <a href="https://dl.acm.org/doi/abs/10.1145/3318464.3389757">Lethe: A Tunable Delete-Aware LSM Engine</a>, SIGMOD 2020</li>
                             <li class="tech-question">
                                 <font color="#cc0000"><strong>Technical Question <script type="text/javascript">document.write("T"+(techq++)); </script>:</strong></font> <em class="tech-question-text">To ensure bounded delete persistent latency, Lethe aggressively performs compactions. How does these eager compactions affect write amplification of the overall system?</em>                                </li>
@@ -534,7 +534,7 @@
                         (run length encoding), hash joins, index joins, sort-merge joins, invisible joins, star schema
                         <h4>Readings</h4>
                         <ul class="mylist">
-                            <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./slides/CAS-CS561-Class7.pdf">Slides</a> </li>
+                            <!-- <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./slides/CAS-CS561-Class7.pdf">Slides</a> </li> -->
                             <li><strong>(P)</strong> <a href="https://dl.acm.org/citation.cfm?doid=1376616.1376712">Column-Stores vs. Row-Stores: How Different Are They Really?</a>, SIGMOD 2008 </li>
                             <li>(B) <a href="https://dl.acm.org/citation.cfm?id=1083658">C-Store: A Column-oriented DBMS</a>, VLDB 2005</li>
                         </ul>
@@ -566,7 +566,7 @@
                         projectivity, selectivity, concurrency control, multi-version concurrency control (MVCC), two-phase locking (2PL)
                         <h4>Readings</h4>
                         <ul class="mylist">
-                            <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./slides/CAS-CS561-Class8.pdf">Discussion Slides</a> </li>
+                            <!-- <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./slides/CAS-CS561-Class8.pdf">Discussion Slides</a> </li> -->
                             <li> <strong>(P)</strong> <a href="https://dl.acm.org/citation.cfm?id=2915231">Bridging the Archipelago between Row-Stores and Column-Stores for Hybrid Workloads</a>, SIGMOD 2016 (paper for <strong class="red"><script type="text/javascript">document.write("REVIEW R"+(review++)); </script></strong>)
                             </li>
                             <li> (B) <a href="https://dl.acm.org/citation.cfm?id=2610502">H2O: A Hands-free Adaptive Store</a>, SIGMOD 2014</li>
@@ -1238,6 +1238,8 @@ Filter Towards Efficient Read for LSM-tree based KV Stores</a>, HotStorage 2018<
                             <li><strong>1:30-1:45:</strong> Closing Remarks </li>
                         </ul>
                     </p>
+
+                    <div style="display:none"></div>
 
                     <h3 class="post-subtitle">
                         <a id="awards"></a>
